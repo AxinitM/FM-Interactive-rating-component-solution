@@ -1,0 +1,239 @@
+:root {
+  /* colors  */
+  --accentColor: #fb7413;
+  --LightGrey: #959eac;
+  --DarkBlue: hsla(213, 20%, 18%, 0.5);
+  --DarkBlueOpacity: hsla(213, 20%, 18%, 0.99);
+  --VeryDarkBlue: #121417;
+  --alertColor: #ff0000;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --attributionColor: #3e52a3;
+
+  /* fonts */
+  --mainFontFamily: "Overpass", sans-serif;
+  /* Weights: 400, 700 */
+}
+
+/* general sets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFontFamily);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-size: 15px;
+  background-color: var(--VeryDarkBlue);
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 412px;
+  /* height: 416px; */
+  border-radius: 30px;
+  background-color: var(--DarkBlue);
+  padding: 0px 35px;
+}
+
+/* star icon section */
+#icon-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--DarkBlueOpacity);
+  margin-top: 25px;
+  visibility: visible;
+}
+
+#icon-star img {
+  width: 16.75px;
+  height: 16px;
+}
+
+/* rating text section */
+
+#rating-section {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  visibility: visible;
+}
+
+h1 {
+  font-size: 28px;
+  color: var(--whiteColor);
+  font-weight: 700;
+  margin: 25px 0px;
+}
+
+p {
+  width: 340px;
+  height: 72px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--LightGrey);
+}
+
+/*  vote numbers section */
+#vote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 341px;
+  color: var(--LightGrey);
+  /* margin-bottom: 25px; */
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.vote-buttons input[type="radio"] {
+  display: none;
+}
+
+.vote-buttons label {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: var(--DarkBlueOpacity);
+  color: var(--whiteColor);
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.vote-buttons input[type="radio"]:hover + label {
+  background-color: var(--accentColor);
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+
+.vote-buttons input[type="radio"]:checked + label {
+  background-color: var(--whiteColor);
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+/* warning message */
+#warning-message {
+  margin: 10px 0px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  color: var(--alertColor);
+  visibility: hidden;
+}
+/* submit button sets */
+
+#submit-button {
+  width: 341px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  background-color: var(--accentColor);
+  color: var(--VeryDarkBlue);
+  border: none;
+  border-radius: 22.5px;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: var(--whiteColor);
+}
+
+/*  thanks section sets */
+
+#thanks-section {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  flex-direction: column;
+  display: none;
+}
+
+#thanks-section img {
+  margin: 35px auto;
+  display: flex;
+}
+
+#selected-vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accentColor);
+  background-color: var(--DarkBlueOpacity);
+  margin: 15px auto;
+  font-weight: normal;
+  font-size: 15px;
+  width: 193px;
+  height: 32px;
+  border: none;
+  border-radius: 22.5px;
+}
+
+#selected-vote span {
+  margin: 0 4px;
+}
+
+#thanksHeader {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto 15px;
+}
+
+#thanksParagraph {
+  display: flex;
+  margin: 0 auto 45px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* footer sets */
+
+/* .attribution {
+        margin-top: 30px;
+        font-size: 11px;
+        text-align: center;
+        color: var(--LightGrey);
+      }
+
+      .attribution a {
+        color: var(--attributionColor);
+      } */
+
+@media (max-width: 768px) {
+  .vote-buttons label {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .vote-buttons input[type="radio"]:focus + label {
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>FM | Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div id="main-container">
+        <!-- Star Icon Section -->
+        <div id="icon-star">
+          <img src="images/icon-star.svg" alt="Star Icon" />
+        </div>
+
+        <!-- Rating Section -->
+        <div id="rating-section">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="vote-buttons">
+            <input type="radio" id="vote1" name="vote" value="1" />
+            <label for="vote1">1</label>
+
+            <input type="radio" id="vote2" name="vote" value="2" />
+            <label for="vote2">2</label>
+
+            <input type="radio" id="vote3" name="vote" value="3" />
+            <label for="vote3">3</label>
+
+            <input type="radio" id="vote4" name="vote" value="4" />
+            <label for="vote4">4</label>
+
+            <input type="radio" id="vote5" name="vote" value="5" />
+            <label for="vote5">5</label>
+          </div>
+
+          <!-- Warning Message -->
+          <span id="warning-message"
+            >Please select a rating before submitting</span
+          >
+
+          <!-- Submit Button -->
+          <button id="submit-button" type="submit">Submit</button>
+        </div>
+
+        <!-- Thanks Section -->
+        <div id="thanks-section">
+          <img src="images/illustration-thank-you.svg" alt="Thank you" />
+          <p id="selected-vote">You selected <span></span> out of 5</p>
+          <h1 id="thanksHeader">Thank you!</h1>
+          <p id="thanksParagraph">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontender.biz/" target="_blank"
+          >Andrei Martinenko</a
+        >
+      </div>
+    </footer> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
