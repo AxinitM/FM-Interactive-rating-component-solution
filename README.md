@@ -4,14 +4,12 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Table of contents
 
-- [FM - Interactive rating component solution](#fm---interactive-rating-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [My process](#my-process)
-  - [Built with](#built-with)
-  - [Author](#author)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [My process](#my-process)
+- [Built with](#built-with)
+- [Author](#author)
 
 ## The challenge
 
@@ -27,10 +25,7 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+[Solution page](https://axinitm.github.io/FM-Interactive-rating-component-solution/)
 
 ## Built with
 
