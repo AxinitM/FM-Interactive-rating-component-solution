@@ -42,7 +42,7 @@ body {
   width: 412px;
   /* height: 416px; */
   border-radius: 30px;
-  background-color: var(--DarkBlue);
+  background: linear-gradient(to right, var(--DarkBlue), var(--DarkBlueOpacity));
   padding: 0px 35px;
 }
 
